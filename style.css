@@ -543,3 +543,67 @@ sup { font-size: .5em; vertical-align: super; line-height: 0; }
   font-size: clamp(26px, 3.4vw, 48px); line-height: 1.12; letter-spacing: -0.035em;
 }
 .home-quote-by { margin: 24px 0 0; font-size: 13px; color: var(--muted); }
+
+/* ---------- case study pages ---------- */
+.cs-hero { padding: clamp(130px, 16vw, 210px) var(--gutter) clamp(40px, 5vw, 64px); }
+.cs-hero .label a { color: var(--ink); border-bottom: 1px solid var(--line); }
+.cs-hero h1 {
+  margin: 0; max-width: 15em;
+  font-weight: 500;
+  font-size: clamp(40px, 6.6vw, 108px);
+  line-height: .98; letter-spacing: -0.05em;
+}
+.cs-hero h1 em { letter-spacing: -0.02em; }
+.cs-meta dd a { border-bottom: 1px solid var(--line); }
+.cs-meta dd a:hover { border-color: var(--ink); }
+
+.cs-wrap { padding: clamp(24px, 3vw, 40px) var(--gutter) 0; }
+.cs-cover { padding-top: clamp(40px, 5vw, 64px); }
+.cs-img { margin: 0; overflow: hidden; border-radius: 4px; background: var(--card); }
+.cs-img img { width: 100%; height: auto; display: block; }
+.cs-pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 2vw, 28px); align-items: start; }
+
+.cs-text {
+  display: grid; grid-template-columns: 1fr 2fr; gap: clamp(24px, 4vw, 64px);
+  padding: clamp(80px, 10vw, 140px) var(--gutter) clamp(24px, 3vw, 40px);
+}
+.cs-text h2 { margin: 0; font-size: 14px; font-weight: 500; }
+.cs-text p { margin: 0 0 1em; max-width: 30em; font-size: clamp(20px, 2vw, 28px); line-height: 1.25; letter-spacing: -0.02em; }
+
+.cs-approach { padding: clamp(80px, 10vw, 140px) var(--gutter) clamp(24px, 3vw, 40px); }
+.cs-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cs-stats { margin-top: clamp(24px, 3vw, 40px); }
+
+.cs-next {
+  display: block; text-align: center;
+  margin: clamp(110px, 14vw, 200px) var(--gutter) 0;
+  padding: clamp(48px, 6vw, 80px) 0;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.cs-next .label { justify-content: center; display: flex; }
+.cs-next-name {
+  display: block;
+  font-weight: 500; font-size: clamp(44px, 8vw, 132px);
+  line-height: .95; letter-spacing: -0.05em;
+}
+.cs-next:hover .arrow { transform: translateX(.18em); }
+
+/* "Case study →" hint on linked cards */
+.pf-meta .pf-case { color: var(--ink); border-bottom: 1px solid var(--line); transition: border-color .3s; }
+.pf-item:hover .pf-case { border-color: var(--ink); }
+a.card { display: block; cursor: pointer; }
+
+/* privacy note under the contact form */
+.form-privacy { margin: 0; font-size: 12px; color: var(--muted); }
+
+/* 404 */
+.nf { min-height: 80svh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 140px var(--gutter) 60px; }
+.nf h1 { margin: 0; font-weight: 600; font-size: clamp(110px, 26vw, 400px); line-height: .8; letter-spacing: -0.07em; }
+.nf p { margin: 28px 0 0; font-size: clamp(20px, 2.2vw, 28px); letter-spacing: -0.02em; }
+.nf .pill { margin-top: 32px; }
+
+@media (max-width: 760px) {
+  .cs-pair, .cs-text, .cs-steps { grid-template-columns: 1fr; }
+  .cs-text { gap: 12px; }
+}
+.cs-stats .big { font-size: clamp(48px, 7.4vw, 124px); }

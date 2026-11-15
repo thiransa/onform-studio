@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fish Tail Lodge — Case study — Onform Studio</title>
+  <meta name="description" content="Fish Tail Lodge sits on a private peninsula across Fewa Lake, with the Annapurna range and Machhapuchhre mirrored on the water.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Fish Tail Lodge — Onform Studio">
+  <meta property="og:description" content="Fish Tail Lodge sits on a private peninsula across Fewa Lake, with the Annapurna range and Machhapuchhre mirrored on the water.">
+  <meta property="og:image" content="https://onformstudio.vercel.app/assets/img/case/ftl-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Vercel Web Analytics -->
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="page-case">
+
+  <header class="top">
+    <a href="index.html" class="logo" aria-label="Onform Studio — home">Onform Studio <sup>®</sup></a>
+    <nav>
+      <a href="index.html#work">Work</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+      <a href="studio.html">Studio</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <p class="label"><a href="portfolio.html">← Portfolio</a> &nbsp;( Case study — 03 )</p>
+      <h1>Where the lake <em>meets the mountains.</em></h1>
+    </section>
+
+    <dl class="st-facts cs-meta reveal">
+      <div><dt>Client</dt><dd>Fish Tail Lodge</dd></div>
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Services</dt><dd>Website design · Build · Booking flow</dd></div>
+      <div><dt>Platform</dt><dd>Framer</dd></div>
+      <div><dt>Live site</dt><dd><a href="https://exact-costs-740485.framer.app/" target="_blank" rel="noopener">Visit site ↗</a></dd></div>
+    </dl>
+
+    <div class="cs-wrap cs-cover"><figure class="cs-img reveal"><img src="assets/img/case/ftl-1.jpg" alt="Fish Tail Lodge homepage — &#x27;Where the Lake Meets the Mountains&#x27;" loading="lazy"></figure></div>
+
+    <section class="cs-text">
+      <h2>The brief</h2>
+      <div>
+        <p>Fish Tail Lodge sits on a private peninsula across Fewa Lake, with the Annapurna range and Machhapuchhre mirrored on the water.</p>
+        <p>The lodge wanted a website as quiet as the place itself — and more guests booking direct, instead of through travel sites.</p>
+      </div>
+    </section>
+
+    <div class="cs-wrap cs-pair">
+      <figure class="cs-img reveal"><img src="assets/img/case/ftl-2.jpg" alt="Fish Tail Lodge &#x27;The Setting&#x27; section" loading="lazy"></figure>
+      <figure class="cs-img reveal"><img src="assets/img/case/ftl-3.jpg" alt="Fish Tail Lodge room cards with nightly prices" loading="lazy"></figure>
+    </div>
+
+    <section class="cs-approach">
+      <div class="section-head"><h2>Approach</h2><span class="count">(03)</span></div>
+      <ol class="steps cs-steps">
+        <li class="reveal"><span class="n">01</span><h3>Slow reading</h3><p>Cream paper backgrounds, a classic serif and wide spacing set a pace closer to a lakeside morning than a booking engine.</p></li>
+        <li class="reveal"><span class="n">02</span><h3>Place first</h3><p>Landscapes, rooms and the restaurant at dusk are given room to breathe — the photography does the selling.</p></li>
+        <li class="reveal"><span class="n">03</span><h3>Book in two taps</h3><p>Clear room cards with nightly price and capacity, and ‘Book now’ always within reach on every screen size.</p></li>
+      </ol>
+    </section>
+
+    <div class="cs-wrap"><figure class="cs-img reveal"><img src="assets/img/case/ftl-4.jpg" alt="Fish Tail Lodge dining section at dusk" loading="lazy"></figure></div>
+
+    <section class="cs-text">
+      <h2>Outcome</h2>
+      <div><p>Built in Framer, the site is now updated by the lodge team themselves — new rooms, seasonal menus and offers, without a developer.</p></div>
+    </section>
+
+    <section class="st-numbers cs-stats reveal">
+      <div><span class="big">03</span><span>Room types to book</span></div>
+      <div><span class="big">4 wks</span><span>Design to launch</span></div>
+      <div><span class="big">100%</span><span>Editable in-house</span></div>
+    </section>
+
+    <a class="cs-next" href="case-albert-wonstein.html">
+      <span class="label">( Next case study )</span>
+      <span class="cs-next-name">Albert Wonstein Atelier <span class="arrow">→</span></span>
+    </a>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-mark">Onform <sup>®</sup></p>
+    <div class="foot-row">
+      <span>© <span id="y">2026</span> Onform Studio</span>
+      <span>Branding · Websites · Product design</span>
+      <a href="https://www.instagram.com/studio.onform/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="#">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const topBar = document.querySelector('.top');
+    const onScroll = () => topBar.classList.toggle('scrolled', scrollY > 8);
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px 20% 0px", threshold: 0 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
