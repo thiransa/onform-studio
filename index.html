@@ -21,7 +21,7 @@
     <nav>
       <a href="#work">Work</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="#studio">Studio</a>
+      <a href="studio.html">Studio</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -29,7 +29,7 @@
   <main>
     <!-- 1 · Minimal hero -->
     <section class="hero">
-      <p class="label">( Onform Studio ® — Independent design practice )</p>
+      <p class="label">( Onform Studio ® — New York &amp; Colombo )</p>
       <h1>From brand identity<br>to <em>digital presence.</em></h1>
       <div class="hero-foot">
         <span>Branding · Websites · Product design</span>
@@ -61,6 +61,12 @@
       <p class="label">( Onform Studio ® )</p>
       <p class="statement reveal">Onform Studio® — a design studio working from brand identity to digital presence. Designing brands, websites and products that move businesses forward.</p>
       <a href="#contact" class="pill"><span class="pill-dot"></span>Let’s chat</a>
+
+      <a href="studio.html" class="founder-line">
+        <img src="assets/img/founder.jpg" alt="Thiransa Muthumala">
+        <span><b>Thiransa Muthumala</b>, Founder · New York &amp; Colombo</span>
+        <span class="founder-more">Meet the studio →</span>
+      </a>
 
       <div class="marquee" aria-label="Brands we've worked with">
         <div class="track">
@@ -115,6 +121,15 @@
       <a href="portfolio.html" class="pill"><span class="pill-dot"></span>View all projects</a>
     </div>
 
+<!-- QUOTES OFF until clients approve — to restore, remove this wrapper and turn <!~~ ~~> back into comment marks
+    <!~~ Featured quote — DRAFT: publish only after Briv approves it ~~>
+    <section class="home-quote reveal">
+      <blockquote>“Onform understood what we were building before we could explain it ourselves. The site feels exactly like the product — calm, clear and quietly confident.”</blockquote>
+      <p class="home-quote-by">Briv</p>
+    </section>
+
+-->
+
     <!-- 5 · Contact form -->
     <section class="contact" id="contact">
       <div class="contact-head">
@@ -164,11 +179,14 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+    const topBar = document.querySelector('.top');
+    const onScroll = () => topBar.classList.toggle('scrolled', scrollY > 8);
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
     /* reveal on scroll */
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.12 });
+    }, { rootMargin: "0px 0px 20% 0px", threshold: 0 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
     /* pile: cards leave one by one while scrolling */

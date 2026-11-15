@@ -21,7 +21,7 @@
     <nav>
       <a href="index.html#work">Work</a>
       <a href="portfolio.html" aria-current="page">Portfolio</a>
-      <a href="index.html#studio">Studio</a>
+      <a href="studio.html">Studio</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </header>
@@ -149,10 +149,13 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+    const topBar = document.querySelector('.top');
+    const onScroll = () => topBar.classList.toggle('scrolled', scrollY > 8);
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.08 });
+    }, { rootMargin: "0px 0px 20% 0px", threshold: 0 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
     /* filters */
